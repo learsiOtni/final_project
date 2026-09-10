@@ -31,7 +31,7 @@ def sent_detector():
         text += f"'{emotion}': {score}, "
 
     first_sentence = f"For the given statement, the system response is {text}. "
-    second_sentence = "The dominant emotion is {dominant_emotion}."
+    second_sentence = f"The dominant emotion is {dominant_emotion}."
     return first_sentence + second_sentence
 
 @app.route("/")
